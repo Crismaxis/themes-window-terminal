@@ -1,0 +1,87 @@
+/* Copiar las imagenes al directorio de imagenes o establecer la nueva
+* ruta donde se encontraran las imagenes para el fondo de la terminal
+*/
+{
+    "$schema": "theme-1",
+    "tabWidthMode": "titleLength",
+    "initialRows": 60,
+    "initialCols": 200,
+    "profiles": [
+        {
+            /* Windows PowerShel */
+            "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+            "name": "Windows PowerShell",
+            "commandline": "powershell.exe",
+            "fontSize": 10,
+            "hidden": false,
+            "tabTitle": "Terminal",
+            /* Url del directorio del fondo/img */
+            "backgroundImage": "C:/Users/ACER/Pictures/face.gif",
+            "backgroundImageAlignment": "bottomRight",
+            "backgroundImageStretchMode": "none",
+            "experimental.retroTerminalEffect": true,
+            "colorScheme": "font-windowPower",
+            "fontFace": "Cascadia Code",
+            "startingDirectory": "c:/"
+        },
+       
+        {
+            /* Cmd */
+            "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+            "name": "cmd",
+            "commandline": "cmd.exe",
+            "hidden": false
+            
+        },
+        {
+            /* PowerShell Core */
+            "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+            "hidden": false,
+            "name": "PowerShell Core",
+            "source": "Windows.Terminal.PowershellCore"
+           
+        },
+        {
+            /* Azure Cloud Shell */
+            "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+            "hidden": false,
+            "name": "Azure Cloud Shell",
+            "source": "Windows.Terminal.Azure"
+           
+        },
+        {
+            /* Git Bash */
+            "guid": "{78b4b215-5722-447b-8b7e-093f96493df2}",
+            "hidden": false,
+            "name": "Git Bash",
+            "commandline": "\"%PROGRAMFILES%\\git\\usr\\bin\\bash.exe\" -i -l",
+            "tabTitle": "Bash",
+            "icon": "%PROGRAMFILES%\\git\\mingw64\\share\\git\\git-for-windows.ico"
+            
+        }
+    ],
+    "schemes": [
+        {
+            "name": "font-windowPower",
+            "background": "#000000",
+            "black": "#000000",
+            "blue": "#579BD5",
+            "brightBlack": "#01490B",
+            "brightBlue": "#9CDCFE",
+            "brightCyan": "#00480C",
+            "brightGreen": "#1AD69C",
+            "brightPurple": "#975EAB",
+            "brightRed": "#2aaeeb",
+            "brightWhite": "#00480C",
+            "brightYellow": "#49cc1d",//Color escritura
+            "cyan": "#00B6D6",
+            "foreground": "#25CD3D",//Color seleccion
+            "green": "#49cc1d",
+            "purple": "#00480C",
+            "red": "#e928d9",
+            "white": "#00480C",
+            "yellow": "#CE9178"  
+        }
+    ],
+    "keybindings": []
+}
